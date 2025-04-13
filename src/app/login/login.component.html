@@ -1,0 +1,28 @@
+<div class="login-container">
+  <img src="assets/logo.png" alt="Logo" class="logo" />
+  <div class="login-form">
+    <h2>Dynamic Data Extraction & Focus Submission</h2>
+    <form (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <input
+          type="text"
+          id="username"
+          name="username"
+          [(ngModel)]="username"
+          placeholder="Username"
+        />
+      </div>
+      <div class="form-group">
+        <input
+          type="password"
+          id="password"
+          name="password"
+          [(ngModel)]="password"
+          placeholder="Password"
+        />
+      </div>
+      <button type="submit">Login</button>
+    </form>
+    <p class="register-link">Don't have an account? <a href="#">Register</a></p>
+  </div>
+</div>
